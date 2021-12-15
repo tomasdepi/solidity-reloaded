@@ -1,6 +1,9 @@
 {
   "dependencies": {
     "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "gulp": "^4.0.2",
+    "loom-truffle-provider": "^0.15.0",
     "truffle-hdwallet-provider": "^1.0.17"
   },
   "name": "crypto-zombies",
