@@ -27,6 +27,10 @@ contract Lottery {
     }
 
     function resetLottery() private {
+        for(uint i;i<players.length;i++) {
+            playersWhoEntered[players[i]] = false;
+        }
+        
         players = new address payable[](0); // empty player list
     }
 
