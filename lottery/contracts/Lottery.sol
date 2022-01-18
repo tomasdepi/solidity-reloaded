@@ -11,6 +11,10 @@ contract Lottery {
         owner = msg.sender;
     }
 
+    function getPlayers() public view returns(address payable[] memory) {
+       return players;
+    }
+
     function enter() public payable {
         require(!playersWhoEntered[msg.sender], 'Caller has already entered.');
         require(msg.value == 1000 wei, 'Need to send 1000 wei to enter the Lottery');
